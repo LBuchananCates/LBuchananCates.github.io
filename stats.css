@@ -1,0 +1,155 @@
+body {
+    background-color: hsl(233, 47%, 7%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lexend Deca';
+    font-size: 15px;
+    color: hsl(0, 0%, 100%);
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 50px;
+}
+
+img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 0;
+}
+
+.insights {
+    background-color: hsl(244, 38%, 16%);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+span {
+    color: hsl(277, 64%, 61%);
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.6);
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.subtitle {
+    color: hsl(0, 0%, 100%);
+    font-size: 20px;
+    line-height: 2;
+    font-family: "Inter";
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.stats span {
+    display: block;
+    font-family: "Lexend Deca";
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 10px;
+    line-height: 1;
+    font-weight: normal;
+    letter-spacing: .01rem;
+}
+
+/* Do this on desktop screens that are 1024px wide or larger */
+@media screen and (min-width: 1024px) {
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+        height: 400px;
+        width: 1000px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 90px;
+        padding-right: 90px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    img {
+        background-image: url(file:///Users/user1/Desktop/projects/stats-preview-card-component-main/images/image-header-desktop.jpg);
+        max-width: 1440px;
+        width: 1100px;
+        height: 390px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 10px;
+    }
+
+
+    .insights {
+        display: flex;
+        flex-direction: column;
+        height: 290px;
+        align-items: left;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 0;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 30px;
+    }
+
+    h1 {
+        text-align: start;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    p {
+        text-align: start;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .stats span {
+        font-size: 11px;
+        color: hsla(0, 0%, 100%, 0.6);
+        line-height: 2.5;
+    }
+
+    .stats {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        padding-left: 30px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+        line-height: 1;
+        text-align: left;
+        padding-top: 30px;
+        padding-right: 63px;
+    }
+}
